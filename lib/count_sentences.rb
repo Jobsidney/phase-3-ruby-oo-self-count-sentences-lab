@@ -7,15 +7,15 @@ class String
   end
 
   def sentence?
-    str.end_with?(".") ? true : false
+    self.str.end_with?(".") ? true : false
   end
 
   def question?
-    self.end_with?("?") ? true : false
+    self.str.end_with?("?") ? true : false
   end
 
   def exclamation?
-    self.end_with?("!") ? true : false
+    self.str.end_with?("!") ? true : false
   end
 
   def count_sentences
@@ -23,4 +23,4 @@ class String
   end
 end
 neww=String.new("job?")
-p neww.sentence?
+p neww.question?
